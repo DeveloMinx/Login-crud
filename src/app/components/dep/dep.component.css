@@ -1,0 +1,77 @@
+.body {
+    height: 100%;
+    background: rgb(209,221,228);
+    background: linear-gradient(164deg, rgba(209,221,228,1) 35%, rgba(110,210,231,1) 100%, rgba(9,121,116,1) 100%);
+}
+
+.container-title{
+    background-color: rgb(39, 38, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    color: white;
+}
+.title-span{
+    margin-top: 60px;
+}
+.span{
+    margin-left: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.input-n2{
+    margin-left: 50px;
+}
+.container-button{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: rgb(63, 122, 103);
+    transition: all 0.5s;
+}
+.button:hover{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(51, 196, 150);
+}
+.container-form{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid black 1px;
+    margin: 50px;
+    border-radius: 10px;
+    
+}
+label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+input{
+    border-radius: 10px;
+    text-align: center;
+}
+@media (max-width:590px){
+    .container-form{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    label{
+        display: block;
+    }
+}
+

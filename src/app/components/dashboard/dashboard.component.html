@@ -1,0 +1,18 @@
+<header >
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Página principal</a>
+        <div class="col-md-3 text-end">
+          <button type="button" class="btn btn-outline-primary me-2" (click)="logOut()">Salir</button>   
+        </div>
+      </div>
+  </nav>
+</header>
+
+<div class="container">
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">Bienvenido!</h1>
+        <p class="fs-5 text-muted">{{ dataUser?.email }}</p>
+      </div>
+  </div>
+  <app-show></app-show>

@@ -1,0 +1,21 @@
+<div class="body">
+<div class="container-cliente">
+<h1>Crear cliente</h1> 
+</div>
+<div class="container-all">
+
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()" class="form" novalidate>
+   
+    <label>Número de cuenta</label>
+    <input formControlName="Ncuenta" type="number" required>
+    <label>Nombres</label>
+    <input formControlName="nombre" type="text" required>
+    <label>Cédula</label>
+    <input formControlName="cedula" type="number" required>
+    <label>Fondo inicial</label>
+    <input formControlName="valor"  type="number" required>
+    <button [disabled]="!postForm.valid" type="submit" class="boton">Guardar</button>
+</form>
+</div>
+
+</div>

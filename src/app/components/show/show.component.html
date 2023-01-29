@@ -1,0 +1,34 @@
+<div class="body">
+<div class="container-title">
+<h1 class="title">Sistema Financiero</h1>
+</div>
+
+<div class="container-cliente">
+<a routerLink="/crear" class="cliente">Nuevo cliente</a>
+</div>
+<div class="container-table">
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>Número de cuenta</th>
+            <th>Nombres</th>
+            <th>Valor</th>
+            <th></th>
+        </tr> 
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of Posts">
+            <td>{{post.Ncuenta}}</td>
+            <td>{{post.nombre}}</td>
+            <td>{{post.valor}} $</td>
+            <td class="container-button">
+                <button routerLink="/retirar/{{post.id}}" class="boton1">Retirar</button>
+            </td>
+            <td class="container-button">
+                <button routerLink="/depositar/{{post.id}}" class="boton2">Depositar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>

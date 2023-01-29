@@ -1,0 +1,44 @@
+<div class="body">
+<div class="container-title">
+    <h1 class="title">Depositos</h1>
+</div>
+<div class="title-span">
+<span class="span">Valor a depositar</span>
+</div>
+<div [formGroup]="editForms"  >
+    <input [(ngModel)]="input1" type="number" formControlName="valor" (ngModelChange)="sumas()" id="n1" hidden >
+</div>
+<div class="input-r">
+<input class="input-n2" [(ngModel)]="input2" type="number" value="0" (ngModelChange)="sumas()" id="n2">
+</div>
+
+<form [formGroup]="editForm"  (ngSubmit)="onSubmit()" class="form" novalidate>
+    <div class="container-form">
+
+    <div>
+    <label>Número de cuenta: </label>
+    <input formControlName="Ncuenta" type="text" required readonly>
+    </div>
+
+    <div>
+    <label>Nombres: </label>
+    <input formControlName="nombre" type="text" required readonly>
+    </div>
+
+    <div>
+    <label>Cédula: </label>
+    <input formControlName="cedula" type="number" required readonly>
+    </div>
+
+    <div>
+    <label>Fondos: </label>
+    <input formControlName="valor"  type="number" [(ngModel)]="re" required readonly>
+    </div>
+    </div>
+
+    <div class="container-button">
+    <button  type="submit" class="button">Depositar</button>
+    </div>
+
+</form>
+</div>
