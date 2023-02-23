@@ -1,5 +1,11 @@
 .body {
-    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: 100% 100%;
     background: rgb(209,221,228);
     background: linear-gradient(164deg, rgba(209,221,228,1) 35%, rgba(110,210,231,1) 100%, rgba(9,121,116,1) 100%);
 }
